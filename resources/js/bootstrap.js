@@ -10,6 +10,9 @@ import 'bootstrap';
 import axios from 'axios';
 window.axios = axios;
 
+import jquery from 'jquery';
+window.$ = window.jquery = jquery;
+
 import DataTable from 'datatables.net-dt';
 
 window.DataTable = DataTable;
@@ -17,6 +20,18 @@ window.DataTable = DataTable;
  
 new DataTable('#myTable', {
     responsive: true
+});
+
+$(document).ready(function() {
+    $('input, select, textarea').on('blur', function() {
+        if (!$(this).val() && $(this).attr('required')) {
+            $(this).addClass(`border-danger`);
+            $(this).parent().find('requiredalt').html('This is a required question').addClass(`text-danger`);
+        }else{
+            $(this).removeClass(`border-danger`);
+            $(this).parent().find('requiredalt').html('');
+        }
+    });
 });
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

@@ -60,3 +60,37 @@
 .p-30px{
     padding: 30px 0;
 }
+
+/* Custom animation if needed */
+.input-focus-animation {
+    transition: box-shadow 0.3s ease;
+}
+.input-focus-animation:focus {
+    box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);
+}
+
+.form-control:focus{
+    border: none;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 0.1; /* Adjust the opacity to your preference */
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #11111182;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
