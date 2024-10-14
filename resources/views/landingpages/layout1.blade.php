@@ -185,7 +185,54 @@
                 </div>
 
                 <div>
-                    
+                    <div class="container mb-5">
+                        <div class="mb-4">
+                            <div class="fs-1 fw-bold">Our Other</div>
+                            <strong class="fs-4">Destinations</strong>
+                        </div>
+                        <div class="d-flex flex-row over-hidden justify-content-center">
+                            <div class="card p-0 rounded-top rounded-bottom">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="position-relative">
+                                        <img src="{{asset('/img/dubai.png')}}" class="card-img-top img-thumbnail h-50 border-0" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Dubai</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card p-0 rounded-top rounded-bottom">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="position-relative">
+                                        <img src="{{asset('/img/singapore.png')}}" class="card-img-top img-thumbnail h-50 border-0" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Singapore</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card p-0 rounded-top rounded-bottom">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <img src="{{asset('/img/thailand.png')}}" class="card-img-top img-thumbnail h-50 border-0" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Thailand</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card p-0 rounded-top rounded-bottom">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <img src="{{asset('/img/bali.png')}}" class="card-img-top img-thumbnail h-50 border-0" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Bali</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card h-400px overflow-hidden rounded-5 shadow-sm position-relative">
