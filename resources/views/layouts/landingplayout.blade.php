@@ -24,21 +24,6 @@
                     <a class="navbar-brand position-absolute p-2" href="{{ url('/') }}">
                         <img src="{{asset('/img/logo.png')}}" class="w-50 bg-cover my-3 position-relative" alt="{{ config('app.name') }}">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- Left Side Of Navbar -->
-                        <ul class="navbar-nav ms-auto">
-                            
-                        </ul>
-    
-                        <!-- Right Side Of Navbar -->
-                        <ul class="navbar-nav">
-                            
-                        </ul>
-                    </div>
                 </div>
             </nav>
     
@@ -48,7 +33,7 @@
         </div>
 
         <footer class="bg-dark text-white text-center pt-5">
-            <h3>Just Trip</h3>
+            <h3>Travel Junky</h3>
             <p>209A, Guneet Kashyap Marg Rd, South Extension II, Block A, New Delhi, Delhi 110049</p>
             <div class="pb-5">
                 <nav>
