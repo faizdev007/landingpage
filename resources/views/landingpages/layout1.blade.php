@@ -242,35 +242,37 @@
                     <div class="card-body p-0 m-0">
                         <img src="{{asset('/img/mounten.webp')}}" class="w-100 bg-cover" alt="">
                     </div>
-                    <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-center z-10 text-center">
-                        <h2 class="fs-50 text-white fw-bold">TRAVEL</h2>
-                        <h1 class="fs-100 text-white-50 fw-bold mb-4">WITH US</h1>
-                        <div>
-                            <div class="d-flex justify-content-center gap-5 text-white">
-                                <div class="d-flex flex-column align-items-center">
-                                    <div class="circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-map-fill w-50" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
-                                        </svg>
+                    <div class="p-2">
+                        <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-center z-10 text-center">
+                            <h2 class="fs-50 text-white fw-bold">TRAVEL</h2>
+                            <h1 class="fs-100 text-white-50 fw-bold mb-4">WITH US</h1>
+                            <div class="container">
+                                <div class="d-flex justify-content-center gap-md-5 text-white">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="circle">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-map-fill w-50" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
+                                            </svg>
+                                        </div>
+                                        <p class="fs-md-5 mt-2">Created Experience</p>
                                     </div>
-                                    <p class="fs-5 mt-2">Created Experience</p>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <div class="circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-raised-hand w-50" viewBox="0 0 16 16">
-                                            <path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207"/>
-                                            <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
-                                        </svg>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="circle">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-raised-hand w-50" viewBox="0 0 16 16">
+                                                <path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207"/>
+                                                <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                            </svg>
+                                        </div>
+                                        <p class="fs-md-5 mt-2">Personalize Services</p>
                                     </div>
-                                    <p class="fs-5 mt-2">Personalize Services</p>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <div class="circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tag-fill w-50" viewBox="0 0 16 16">
-                                            <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
-                                        </svg>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="circle">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tag-fill w-50" viewBox="0 0 16 16">
+                                                <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                                            </svg>
+                                        </div>
+                                        <p class="fs-md-5 mt-2">Unbeatable Rates</p>
                                     </div>
-                                    <p class="fs-5 mt-2">Unbeatable Rates</p>
                                 </div>
                             </div>
                         </div>
