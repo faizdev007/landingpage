@@ -19,9 +19,9 @@
 <body>
     <div id="app" class="d-flex flex-column justify-content-between position-absolute top-0 bottom-0 start-0 end-0">
         <div>
-            <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm p-30px">
+            <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm p-30px p-4">
                 <div class="container position-relative w-100 justify-content-around p-2">
-                    <a class="navbar-brand position-absolute p-2" href="{{ url('/') }}">
+                    <a class="d-flex justify-content-center m-0 navbar-brand p-2 position-absolute" href="{{ url('/') }}">
                         <img src="{{asset('/img/logo.png')}}" class="w-50 bg-cover my-3 position-relative" alt="{{ config('app.name') }}">
                     </a>
                 </div>

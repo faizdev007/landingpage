@@ -16,39 +16,39 @@
                         <h1 class="fs-100 text-white-50 fw-bold">Bali</h1>
                     </div>
                 </div>
-                <div class="position-relative z-2 mb-5">
+                <div class="position-relative z-2 mb-5 mt-3">
                     <div class="card rounded-5 top-n-5 shadow col-md-10 mx-auto position-relative overflow-hidden">
-                        <h2 class="text-center mt-3 fw-bold fs-50 fs-sm-1">Travel Junky Bali Inquiry Form</h2>
-                        <div class="my-4">
+                        <h2 class="text-center mt-3 fw-bold fs-50 fs-sm-1">Travel Junky Inquiry Form</h2>
+                        <div class="my-4 container">
                             <div class="d-flex justify-content-center gap-5 text-dark">
                                 <div class="d-flex flex-column align-items-center">
                                     <div class="circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-box2-heart-fill" viewBox="0 0 16 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box2-heart-fill w-50" viewBox="0 0 16 16">
                                             <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1zM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
                                         </svg>
                                     </div>
-                                    <strong class="fs-5 mt-2">Custom-made</strong>
-                                    <strong class="fs-5">Itineraries</strong>
+                                    <strong class="fs-md-5 mt-2">Custom-made</strong>
+                                    <strong class="fs-md-5">Itineraries</strong>
                                 </div>
                                 <div class="d-flex flex-column align-items-center">
                                     <div class="circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-journal-bookmark-fill w-50" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"/>
                                             <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
                                             <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
                                         </svg>
                                     </div>
-                                    <strong class="fs-5 mt-2">Unforgettable</strong>
-                                    <strong class="fs-5">Memories</strong>
+                                    <strong class="fs-md-5 mt-2">Unforgettable</strong>
+                                    <strong class="fs-md-5">Memories</strong>
                                 </div>
                                 <div class="d-flex flex-column align-items-center">
                                     <div class="circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-percent" viewBox="0 0 16 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-percent w-50" viewBox="0 0 16 16">
                                             <path d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0M4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5m7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
                                         </svg>
                                     </div>
-                                    <strong class="fs-5 mt-2">Best</strong>
-                                    <strong class="fs-5">Prices</strong>
+                                    <strong class="fs-md-5 mt-2">Best</strong>
+                                    <strong class="fs-md-5">Prices</strong>
                                 </div>
                             </div>
                         </div>
@@ -238,12 +238,14 @@
                     </div>
                 </div>
 
-                <div class="card h-400px overflow-hidden rounded-5 shadow-sm position-relative">
-                    <div class="card-body p-0 m-0">
-                        <img src="{{asset('/img/mounten.webp')}}" class="w-100 bg-cover" alt="">
+                <div class="position-relative rounded-5 overflow-hidden">
+                    <div class="position-absolute top-0 bottom-0 start-0 end-0 z-0">
+                        <img src="{{asset('/img/mounten.webp')}}" class="position-absolute top-0 bottom-0 start-0 end-0 h-100 w-100" alt="">
+                        <!-- Black tint overlay -->
+                        <div class="position-absolute top-0 bottom-0 start-0 end-0 bg-black-overlay"></div>
                     </div>
-                    <div class="p-2">
-                        <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-center z-10 text-center">
+                    <div class="py-md-5 py-4">
+                        <div class="position-relative d-flex flex-column justify-content-center z-1 text-center">
                             <h2 class="fs-50 text-white fw-bold">TRAVEL</h2>
                             <h1 class="fs-100 text-white-50 fw-bold mb-4">WITH US</h1>
                             <div class="container">
@@ -278,7 +280,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

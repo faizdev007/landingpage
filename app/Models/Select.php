@@ -6,14 +6,19 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Activities extends Model
+class Select extends Model
 {
     use HasFactory,SoftDeletes;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
     protected $fillable = [
-        'landing_page_id',
-        'title',
-        'description',
-        'backgroundimg',
+        'label',
+        'name',
+        'required',
+        'ip_address'
     ];
 }

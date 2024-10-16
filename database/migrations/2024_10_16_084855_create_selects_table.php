@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('landing_pages', function (Blueprint $table) {
+        Schema::create('selects', function (Blueprint $table) {
             $table->id();
-            $table->text('title');
-            $table->longtext('description');
-            $table->string('backgroundimg');
-            $table->integer('rating');
-            $table->string('country');
+            $table->text('label');
+            $table->string('name');
+            $table->boolean('required')->default(0);
+            $table->ipAddress();
             $table->timestamps();
             $table->softDeletes(); // This adds the `deleted_at` column
         });
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('landing_pages');
+        Schema::dropIfExists('selects');
     }
 };

@@ -20,6 +20,7 @@ return new class extends Migration
             $table->longtext('description');
             $table->string('backgroundimg');
             $table->timestamps();
+            $table->softDeletes(); // This adds the `deleted_at` column
             $table->foreign('landing_page_id')
             ->references('id')
             ->on('landing_pages')
