@@ -123,3 +123,11 @@
     background-position: center;
     height: 100vh; /* Adjust height as needed */
 }
+
+.form-control:focus{
+    box-shadow: none!important;
+}
+
+.top-n-15{
+    top: -15px;
+}

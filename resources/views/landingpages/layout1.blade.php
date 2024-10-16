@@ -16,7 +16,7 @@
                         <h1 class="fs-100 text-white-50 fw-bold">Bali</h1>
                     </div>
                 </div>
-                <div class="position-relative z-2 mb-5 mt-3">
+                <div class="position-relative z-2 mb-3 mt-3">
                     <div class="card rounded-5 top-n-5 shadow col-md-10 mx-auto position-relative overflow-hidden">
                         <h2 class="text-center mt-3 fw-bold fs-50 fs-sm-1">Travel Junky Inquiry Form</h2>
                         <div class="my-4 container">
@@ -57,37 +57,37 @@
                             <form>
                                 <!-- 2 column grid layout with text inputs for the first and last names -->
                                 <div class="row">
-                                    <div class="col-md-6 mb-5">
-                                        <div  class="form-outline">
-                                            <label class="form-label text-over-border mb-0" for="fullname">Your Full Name <span class="text-danger">*</span></label>
-                                            <input type="text" id="fullname" class="form-control bg-transparent bg-white-700 py-1 fs-5 border-bottom border-0 rounded-0" required/>
+                                    <div class="col-md-6 mb-4">
+                                        <div  class="form-outline position-relative">
+                                            <label class="form-label text-over-border mb-0 top-n-15" for="fullname">Your Full Name <span class="text-danger">*</span></label>
+                                            <input type="text" id="fullname" class="form-control bg-transparent bg-white-700 fs-5 border-bottom border-0 rounded-0" required/>
                                             <requiredalt></requiredalt>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-5">
-                                        <div  class="form-outline">
-                                            <label class="form-label text-over-border mb-0" for="phone">Phone Number <span class="text-danger">*</span></label>
-                                            <input type="text" id="phone" class="form-control bg-transparent py-1 fs-5 border-bottom border-0 rounded-0" required/>
-                                            <requiredalt></requiredalt>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-12 mb-5">
-                                        <div  class="form-outline">
-                                            <label class="form-label text-over-border mb-0" for="email">Email Address <span class="text-danger">*</span></label>
-                                            <input type="email" id="email" class="form-control bg-transparent py-1 fs-5 border-bottom border-0 rounded-0" required/>
+                                    <div class="col-md-6 mb-4">
+                                        <div  class="form-outline position-relative">
+                                            <label class="form-label text-over-border mb-0 top-n-15" for="phone">Phone Number <span class="text-danger">*</span></label>
+                                            <input type="text" id="phone" class="form-control bg-transparent fs-5 border-bottom border-0 rounded-0" required/>
                                             <requiredalt></requiredalt>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-md-6 mb-5">
-                                        <div  class="form-outline">
-                                            <label class="form-label" for="triptype">Type of trip you looking for ? <span class="text-danger">*</span></label>
-                                            <select name="triptype" id="triptype" class="form-select py-2 fs-4" required>
+                                    <div class="col-md-12 mb-4">
+                                        <div  class="form-outline position-relative">
+                                            <label class="form-label text-over-border mb-0 top-n-15" for="email">Email Address <span class="text-danger">*</span></label>
+                                            <input type="email" id="email" class="form-control bg-transparent fs-5 border-bottom border-0 rounded-0" required/>
+                                            <requiredalt></requiredalt>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div  class="form-outline position-relative">
+                                            <label class="form-label top-n-15" for="triptype">Type of trip you looking for ? <span class="text-danger">*</span></label>
+                                            <select name="triptype" id="triptype" class="form-select fs-4" required>
                                                 <option value="">Choose *</option>
                                                 <option value="honeymoon">Honeymoon Trip</option>
                                                 <option value="family">Family/Friends Trip</option>
@@ -96,10 +96,10 @@
                                             <requiredalt></requiredalt>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-5">
-                                        <div  class="form-outline">
-                                            <label class="form-label" for="tripmonth">Which month you plan to Travel? <span class="text-danger">*</span></label>
-                                            <select name="tripmonth" id="tripmonth" class="form-select py-2 fs-4" required>
+                                    <div class="col-md-6 mb-4">
+                                        <div  class="form-outline position-relative">
+                                            <label class="form-label top-n-15" for="tripmonth">Which month you plan to Travel? <span class="text-danger">*</span></label>
+                                            <select name="tripmonth" id="tripmonth" class="form-select fs-4" required>
                                                 <option value="">Choose *</option>
                                                 <option value="honeymoon">Honeymoon Trip</option>
                                                 <option value="family">Family/Friends Trip</option>
@@ -111,71 +111,39 @@
                                 </div>
 
                                 <div class="row ">
-                                    <div class="col-md-6 mb-5">
-                                        <div  class="form-outline">
-                                            <p class="form-label pb-2">Have you booked the flights? <span class="text-danger">*</span></p>
-                                            <div class="row g-2 form-control d-flex">
-                                                <div class="col-12 col-md-4">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="tripbook" id="tripbook1" value="yes" required>
-                                                        <label class="form-check-label" for="tripbook1">
-                                                            Yes
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-4">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="tripbook" id="tripbook2" value="no" required>
-                                                        <label class="form-check-label" for="tripbook2">
-                                                            No
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div  class="form-outline position-relative">
+                                            <label class="form-label top-n-15" for="tripbook">Have you booked the flights? <span class="text-danger">*</span></label>
+                                            <select name="tripbook" id="tripbook" class="form-select fs-4" required>
+                                                <option value="">Choose *</option>
+                                                <option value="1">Yes</option>
+                                                <option value="0">No</option>
+                                            </select>
                                             <requiredalt></requiredalt>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-5">
-                                        <div  class="form-outline">
-                                            <p class="form-label pb-2" for="form3Example4">What is your Package Budget? <span class="text-danger">*</span></p>
-                                            <div class="row g-2 form-control d-flex">
-                                                <div class="col-12 col-md-4">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="tripcost" id="tripcost1" value="1_to_1.5" required>
-                                                        <label class="form-check-label" for="tripcost1">
-                                                            1 Lakh - 1.5 Lakh
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-4">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="tripcost" id="tripcost2" value="2_to_2.5" required>
-                                                        <label class="form-check-label" for="tripcost2">
-                                                            2 Lakh - 2.5 Lakh
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-4">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="tripcost" id="tripcost3" value="2.5_+" required>
-                                                        <label class="form-check-label" for="tripcost3">
-                                                            2.5 Lakh +
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
+
+                                    <div class="col-md-6 mb-4">
+                                        <div  class="form-outline position-relative">
+                                            <label class="form-label top-n-15" for="tripcost">What is your Package Budget? <span class="text-danger">*</span></label>
+                                            <select name="tripcost" id="tripcost" class="form-select fs-4" required>
+                                                <option value="">Choose *</option>
+                                                <option value="1lakh_to_1.5lakh">1 Lakh - 1.5 Lakh</option>
+                                                <option value="2lakh_to_2.5lakh">2 Lakh - 2.5 Lakh</option>
+                                                <option value="2.5lakh_plus">2.5 Lakh +</option>
+                                            </select>
                                             <requiredalt></requiredalt>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-md-6 mb-1">
+                                    <div class="col mb-1">
                                         <div  class="form-outline">
                                             <button type="button" class="btn text-bg-success w-100 py-2">Submit</button>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-1">
+                                    <div class="col-md-6 mb-1 d-none">
                                         <div  class="form-outline">
                                             <button type="button" class="btn text-bg-dark w-100 py-2">Clear</button>
                                         </div>
@@ -187,7 +155,7 @@
                 </div>
 
                 <div>
-                    <div class="container mb-5">
+                    <div class="container mb-5 d-none">
                         <div class="">
                             <div class="fs-1 fw-bold">Our Other</div>
                             <strong class="fs-4">Destinations</strong>
