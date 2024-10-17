@@ -14,7 +14,5 @@ class LandingPage extends Model
         'title',
         'description',
         'backgroundimg',
-        'rating',
-        'country',
     ];
 }

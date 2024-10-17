@@ -55,9 +55,9 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://192.168.100.115'),
+    'url' => env('APP_URL', 'http://localhost'),
 
-    'asset_url' => env('ASSET_URL', 'http://192.168.100.115/landingpage/public/'),
+    'asset_url' => env('ASSET_URL', 'http://localhost/landingpage/public/'),
 
     /*
     |--------------------------------------------------------------------------

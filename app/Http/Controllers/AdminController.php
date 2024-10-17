@@ -32,4 +32,8 @@ class AdminController extends Controller
         $landingpages = LandingPage::select('id')->get();
         return view('admin.landingpage',compact('landingpages'));
     }
+
+    public function savelandingpage(Request $request){
+        dd($request);
+    }
 }

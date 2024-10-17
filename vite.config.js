@@ -18,11 +18,5 @@ export default defineConfig({
                 quietDeps: true, // Suppress warnings from dependencies
             },
         },
-    },
-    server: {
-        host: true,
-        hmr: {
-            host: '192.168.100.115'
-        }
     }
 });

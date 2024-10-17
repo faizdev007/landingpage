@@ -8,7 +8,7 @@
     </span> Dashboard
     </h3>
     </div>
-    <div class="row">
+    <div class="row d-none">
       <div class="col-md-4 stretch-card grid-margin">
         <div class="card bg-gradient-danger card-img-holder text-white">
           <div class="card-body">
@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row d-none">
       <div class="col-md-7 grid-margin stretch-card">
         <div class="card">
           <div class="card-body">
@@ -67,7 +67,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row d-none">
       <div class="col-12 grid-margin">
         <div class="card">
           <div class="card-body">
@@ -135,7 +135,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row d-none">
       <div class="col-lg-5 grid-margin stretch-card">
         <div class="card">
           <div class="card-body p-0 d-flex">

@@ -25,5 +25,6 @@ Route::middleware(['auth','role:0'])->prefix('admin')->controller(AdminControlle
     Route::get('dashboard','dashboard')->name('dashboard');
     Route::get('userslist','userslist')->name('userslist');
     Route::get('landingpage','landingpage')->name('landingpage');
+    Route::post('savelandingpage','savelandingpage')->name('savelandingpage');
 });
 // end here !

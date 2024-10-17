@@ -32,6 +32,20 @@ $(document).ready(function() {
             $(this).parent().find('requiredalt').html('');
         }
     });
+
+    $('#backgroundimg').on('change', function() {
+        var file = this.files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#imagePreview').html('<img src="' + e.target.result + '" alt="Image Preview">');
+                $('#imagePreview img').css('display', 'block');
+            }
+            reader.readAsDataURL(file);
+        } else {
+            $('#imagePreview').html('Image Preview');
+        }
+    });
 });
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

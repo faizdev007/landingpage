@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}" />
+    <!-- Scripts -->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
   </head>
   <body>
     
@@ -29,7 +31,7 @@
     <div class="container-fluid page-body-wrapper">
         @include('components.admin.sidenav')
         <div class="main-panel">
-            <div class="content-wrapper">
+            <div class="py-4">
                 @yield('display')
             </div>
         </div>
