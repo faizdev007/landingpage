@@ -16,8 +16,6 @@ return new class extends Migration
             $table->text('title');
             $table->longtext('description');
             $table->string('backgroundimg');
-            $table->integer('rating');
-            $table->string('country');
             $table->timestamps();
             $table->softDeletes(); // This adds the `deleted_at` column
         });
