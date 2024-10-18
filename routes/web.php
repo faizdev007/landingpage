@@ -19,6 +19,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->middlewa
 
 
 Route::get('/landingpage',[App\Http\Controllers\Controller::class, 'landingpage'])->name('landingpage');
+Route::get('/landing-page/{slug}',[App\Http\Controllers\Controller::class, 'visitlandingpage'])->name('visitlandingpage');
 
 // main admin routs
 Route::middleware(['auth','role:0'])->prefix('admin')->controller(AdminController::class)->group(function(){

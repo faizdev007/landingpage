@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('landing_pages', function (Blueprint $table) {
             $table->id();
             $table->text('title');
+            $table->text('slug')->nullable();
             $table->longtext('description')->nullable();
             $table->string('backgroundimg');
             $table->text('sheet_id');

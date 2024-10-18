@@ -7,13 +7,13 @@
             <div class="position-relative">
                 <div class="card h-75 overflow-hidden rounded-5 shadow-sm position-relative mb-sm-5">
                     <div class="card-body p-0 m-0">
-                        <img src="{{asset('/img/bali.png')}}" class="w-100 bg-cover" alt="">
+                        <img src="{{isset($landingpagedata->title) ? url($landingpagedata->backgroundimg) : asset('/img/bali.png')}}" class="w-100 bg-cover" alt="">
                         <!-- Black tint overlay -->
                         <div class="position-absolute top-0 bottom-0 start-0 end-0 bg-black-overlay"></div>
                     </div>
                     <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-center z-10 text-center z-1">
                         <h2 class="fs-50 text-white fw-bold">EXPLORE THE</h2>
-                        <h1 class="fs-100 text-white-50 fw-bold">Bali</h1>
+                        <h1 class="fs-100 text-white-50 fw-bold">{{$landingpagedata->title ?? 'Bali'}}</h1>
                     </div>
                 </div>
                 <div class="position-relative z-2 mb-3 mt-3">
@@ -55,6 +55,10 @@
                         <img src="{{asset('/img/aircraft_route.png')}}" class="w-100 background-image bg-cover item-align-center position-absolute top-0 bottom-0 start-0 end-0" alt="">
                         <div class="card-body p-md-5 position-relative z-10">
                             <form>
+                                @csrf
+                                @method('post')
+                                <input type="hidden" name="sheet_id" value="{{$landingpagedata->sheet_id ?? null}}"/>
+                                <input type="hidden" name="sheet_name" value="{{$landingpagedata->sheet_name ?? null}}"/>
                                 <!-- 2 column grid layout with text inputs for the first and last names -->
                                 <div class="row">
                                     <div class="col-md-6 mb-4">

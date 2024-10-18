@@ -46,6 +46,18 @@ $(document).ready(function() {
             $('#imagePreview').html('Image Preview');
         }
     });
+
+    $('.btn-close').on('click', function() {
+        // Find the form inside the modal and reset it
+        $('#staticBackdrop form')[0].reset();
+        // Clear the image preview
+        $('#imagePreview').html('Image Preview');
+        $('input[name="id"]').remove();
+    });
+
+    setTimeout(function(){
+        $('#Message').fadeOut(1000);
+    },3000);
 });
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

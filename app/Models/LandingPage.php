@@ -12,6 +12,7 @@ class LandingPage extends Model
 
     protected $fillable = [
         'title',
+        'slug',
         'description',
         'backgroundimg',
         'sheet_id',

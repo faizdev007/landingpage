@@ -1,5 +1,5 @@
 <!-- partial:partials/_sidebar.html -->
-<nav class="sidebar sidebar-offcanvas" id="sidebar">
+<nav class="sidebar sidebar-offcanvas border-end border-dark" id="sidebar">
     <ul class="nav">
         <li class="nav-item">
             <a class="nav-link" href="{{Route('landingpage')}}">

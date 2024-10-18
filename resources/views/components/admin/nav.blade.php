@@ -1,7 +1,7 @@
-<nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+<nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row border-bottom border-dark">
 <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
     <a class="navbar-brand brand-logo w-auto px-2" href="{{route('dashboard')}}"><span class="fw-bold text-dark fs-3">Travel Junky</span></a>
-    <a class="navbar-brand brand-logo-mini" href="index.html"><img class="w-100" src="{{asset('/img/logo.png')}}" alt="logo" /></a>
+    <a class="navbar-brand brand-logo-mini rounded-5 border fw-bold border-dark p-0 text-center mx-1" href="index.html">TJ</a>
 </div>
 <div class="navbar-menu-wrapper d-flex align-items-stretch">
     <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">

@@ -30,7 +30,22 @@
     
     <div class="page-body-wrapper">
         @include('components.admin.sidenav')
-        <div class="main-panel">
+            <div class="main-panel">
+                <div class="bottom-0 end-0 mx-auto position-fixed z-1 p-1" id="Message">
+                @if (Session::has('success'))
+                <div class="bg-success text-white p-2 text-center rounded-md my-2 rounded shadow animated fadeIn">
+                    {{ Session::get('success') }}
+                </div>
+                @endif
+
+                @if($errors->any())
+                @foreach($errors->all() as $key=>$error)
+                <div class="bg-danger text-white p-2 text-center rounded-md my-2 rounded shadow animated fadeIn">
+                    {{$error}}
+                </div>
+                @endforeach
+                @endif
+            </div>
             <div class="p-4">
                 @yield('display')
             </div>

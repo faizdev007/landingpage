@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Middleware\RoleMiddleware;
 use App\Models\User;
 use App\Models\LandingPage;
+use Illuminate\Support\Str;
 
 class AdminController extends Controller
 {
@@ -29,29 +30,56 @@ class AdminController extends Controller
     }
 
     public function landingpage(){
-        $landingpages = LandingPage::select('id','title','description','backgroundimg','sheet_id','sheet_name','updated_at')->get();
+        $landingpages = LandingPage::select('id','title','slug','description','backgroundimg','sheet_id','sheet_name','updated_at')->get();
         return view('admin.landingpage',compact('landingpages'));
     }
 
     public function savelandingpage(Request $request){
         $request->validate([
             'title'=>'required',
-            'backgroundimg'=>'required',
+            'backgroundimg'=>'',
             'sheet_id'=>'required',
             'sheet_name'=>'required',
         ]);
 
-        $record = LandingPage::create($request->all());
+        if($request->id){
+            LandingPage::where('id',$request->id)->update([
+                'title'=>$request->title,
+                'slug'=>Str::slug($request->title),
+                'sheet_id'=>$request->sheet_id,
+                'sheet_name'=>$request->sheet_name,
+            ]);
 
-        if($record){
             if($request['backgroundimg']){
                 $thumb = uploadFile($request['backgroundimg'],'LandingPage','image','landingpagethumbnail',1920);
+                
+                LandingPage::where('id',$request->id)->update([
+                    'backgroundimg'=>$thumb[0]
+                ]);
             }
-            LandingPage::where('id',$record->id)->update([
-                'backgroundimg'=>$thumb[0]
-            ]);
+
+
+        }else{
+            $record = LandingPage::create($request->all());
         }
-        return back()->withSuccess('Landing Page Created Successfully!');
+
+        if(isset($record)){
+            if($request['backgroundimg']){
+                $thumb = uploadFile($request['backgroundimg'],'LandingPage','image','landingpagethumbnail',1920);
+                
+                LandingPage::where('id',$record->id)->update([
+                    'slug'=>Str::slug($record->title),
+                    'backgroundimg'=>$thumb[0]
+                ]);
+            }
+
+        }
+
+        if(isset($record)){
+            return back()->withSuccess('Landing Page Created Successfully!');
+        }else{
+            return back()->withSuccess('Landing Page Updated Successfully!');
+        }
     }
 
     public function deleteLpage(Request $request){
