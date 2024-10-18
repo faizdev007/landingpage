@@ -28,10 +28,10 @@
     
     @include('components.admin.nav')
     
-    <div class="container-fluid page-body-wrapper">
+    <div class="page-body-wrapper">
         @include('components.admin.sidenav')
         <div class="main-panel">
-            <div class="py-4">
+            <div class="p-4">
                 @yield('display')
             </div>
         </div>

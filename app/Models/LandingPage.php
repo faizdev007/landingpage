@@ -14,5 +14,8 @@ class LandingPage extends Model
         'title',
         'description',
         'backgroundimg',
+        'sheet_id',
+        'sheet_name',
+        'deleted_at'
     ];
 }

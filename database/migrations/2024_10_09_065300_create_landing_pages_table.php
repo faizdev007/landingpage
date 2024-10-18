@@ -14,8 +14,10 @@ return new class extends Migration
         Schema::create('landing_pages', function (Blueprint $table) {
             $table->id();
             $table->text('title');
-            $table->longtext('description');
+            $table->longtext('description')->nullable();
             $table->string('backgroundimg');
+            $table->text('sheet_id');
+            $table->string('sheet_name');
             $table->timestamps();
             $table->softDeletes(); // This adds the `deleted_at` column
         });
