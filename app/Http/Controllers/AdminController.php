@@ -82,15 +82,27 @@ class AdminController extends Controller
         }
     }
 
-    public function deleteLpage(Request $request){
+    public function moverecycleLpage(Request $request){
         LandingPage::where('id',$request->id)->delete();
 
         return back()->withSuccess('Landing Page Move to Recycle Bin Successfully!');
     }
 
     public function landingpagerecyclebin(){
-        $recycledata = LandingPage::whereNotNull('deleted_at')->get();
+        $recycledata = LandingPage::onlyTrashed()->get();
 
         return view('admin.landingpagerecyclebee',compact('recycledata'));
+    }
+
+    public function recoverLpage(Request $request){
+        $recycledata = LandingPage::where('id',$request->id)->restore();
+
+        return back()->withSuccess('Landing Page Recoverd from Recycle Bin Successfully!');
+    }
+
+    public function deleteLpage(Request $request){
+        $recycledata = LandingPage::where('id',$request->id)->forceDelete();
+
+        return back()->withSuccess('Landing Page Delete Permanently!');
     }
 }

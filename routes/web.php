@@ -27,7 +27,9 @@ Route::middleware(['auth','role:0'])->prefix('admin')->controller(AdminControlle
     Route::get('userslist','userslist')->name('userslist');
     Route::get('landingpage','landingpage')->name('landingpage');
     Route::post('savelandingpage','savelandingpage')->name('savelandingpage');
+    Route::post('moverecycleLpage','moverecycleLpage')->name('moverecycleLpage');
     Route::post('deleteLpage','deleteLpage')->name('deleteLpage');
+    Route::post('recoverLpage','recoverLpage')->name('recoverLpage'); 
     Route::get('landingpagerecyclebin','landingpagerecyclebin')->name('landingpagerecyclebin');
 });
 // end here !
